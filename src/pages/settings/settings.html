@@ -1,0 +1,22 @@
+<ion-header>
+  
+    <ion-navbar>
+      <ion-title>Add New City</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content>
+    <form (ngSubmit)="saveForm()">
+      <ion-item>
+        <ion-label>City : </ion-label>
+        <ion-input [(ngModel)]="city" name="city" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>State : </ion-label>
+        <ion-input [(ngModel)]="state" name="state" type="text"></ion-input>
+      </ion-item>
+      <button ion-button type="Submit" block>Add City</button>
+    </form>
+  </ion-content>
